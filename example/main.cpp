@@ -29,6 +29,8 @@ int main(int argc, char *argv[]) {
   options.es = true;
   glsl.set_common_options(options);
 
+  glsl.build_combined_image_samplers();
+
   std::cout << glsl.compile() << std::endl;
 
   return 0;
