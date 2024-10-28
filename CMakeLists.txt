@@ -16,5 +16,7 @@ add_subdirectory(src/spirv)
 add_subdirectory(src/dxbc)
 
 if (BUILD_EXAMPLE)
+    find_package(spirv_cross_core REQUIRED)
+    find_package(spirv_cross_glsl REQUIRED)
     add_subdirectory(example)
 endif()
